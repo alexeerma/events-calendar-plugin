@@ -21,7 +21,7 @@
 }
 
 .event-head {
-    color: white;
+    color: var(--yellow);
 }
 
 .event-head:hover {
