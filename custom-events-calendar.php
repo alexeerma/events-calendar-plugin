@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Custom Events Calendar
-Plugin URI: https://github.com/alexeerma/events-calendar-plugin
+Plugin URI: https://www.alexeerma.ee/
 Description: A lightweight plugin to manage and display events.
 Version: 1.0
 Author: Aleksander Eerma

@@ -19,7 +19,7 @@ class CEC_Event_Shortcode {
         // Query events
         $args = array(
             'post_type' => 'event',
-            'posts_per_page' => 5,
+            'posts_per_page' => 4,
             'meta_key' => '_cec_event_date',
             'orderby' => 'meta_value',
             'order' => 'ASC',
@@ -40,7 +40,8 @@ class CEC_Event_Shortcode {
         }
 
         // Start building the output
-        $output = '<h2 class="head-cec">NET Spordihalli sündmuste kalender</h2>';
+        $output = '<div class="cec-events-container">';
+        $output .= '<h2 class="head-cec">NET Spordihalli sündmuste kalender</h2>';
         $output .= '<ul class="cec-events-list">';
 
         while ($events->have_posts()) {
@@ -69,6 +70,7 @@ class CEC_Event_Shortcode {
         }
 
         $output .= '</ul>';
+        $output .= '</div>';
 
         wp_reset_postdata();
 

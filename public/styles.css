@@ -4,21 +4,37 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.cec-events-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.cec-events-container * {
+    box-sizing: border-box;
+}
+
 .head-cec {
+    width: 100%;
+    margin: 0 0 1em;
     color: var(--yellow);
 }
 
 .cec-events-list {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
     list-style: none;
-    margin-left: -38px;
 }
+
 
 .events-list {
     padding: 10px;
     border: 1px solid whitesmoke;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
-    width: 100%;
+    max-width: 100%;
 }
 
 .event-head {
@@ -78,16 +94,17 @@
     display: inline-block;
     padding: 10px 20px;
     background-color: var(--yellow);
-    color: white;
+    color: var(--darkblack);
     font-weight: bold;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 15px;
     transition: background-color 0.3s ease;
 }
 
 .event-button:hover {
-    background-color: darkgoldenrod;
-    color: var(--darkblack);
+    background-color: rgba(255,255,255,0);
+    color: var(--yellow);
+    border: solid 2px var(--yellow);
 }
 
 
@@ -96,14 +113,21 @@
     .event-grid {
         grid-template-columns: 120px 1fr; /* Switch to 2 columns */
         grid-template-rows: auto auto; /* Allow stacking */
+        padding-left: 0;
+        justify-items: center;
+        align-items: center;
     }
 
     .event-button-wrapper {
         grid-column: 1 / -1; /* Make the button span across both columns */
         justify-self: left; /* Center the button */
-        margin-top: -20px; /* Add spacing */
+        margin-top: -10px; /* Add spacing */
     }
     .event-head{
-        font-size: 20px;
+        font-size: 16px;
+        max-width: 100%;
+    }
+    .head-cec {
+        text-align: center;
     }
 }
